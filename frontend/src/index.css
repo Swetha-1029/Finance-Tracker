@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Public+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 44 5% 98%;
+    --foreground: 24 6% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 24 6% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 24 6% 10%;
+    --primary: 24 10% 16%;
+    --primary-foreground: 44 5% 98%;
+    --secondary: 24 6% 90%;
+    --secondary-foreground: 24 6% 10%;
+    --muted: 24 5% 96%;
+    --muted-foreground: 25 5% 48%;
+    --accent: 22 94% 49%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 24 6% 90%;
+    --input: 24 6% 90%;
+    --ring: 24 10% 16%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Public Sans', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', sans-serif;
+  }
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
